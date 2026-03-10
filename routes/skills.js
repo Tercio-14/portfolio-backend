@@ -7,7 +7,7 @@ const skills = {
   languages: ["JavaScript", "TypeScript"],
   backend: ["Node.js", "Express"],
   databases: ["PostgreSQL", "MongoDB"],
-  tools: ["Docker", "Git", "Linux"],
+  tools: ["Docker", "Git", "Postman", "Linux"],
 };
 
 router.get("/", async (_req, res) => {

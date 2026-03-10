@@ -35,8 +35,8 @@ app.use(
 
 // --------------- Global Middleware ---------------
 app.use(express.json());
-app.use(rateLimiter);
 app.use(logger);
+app.use(rateLimiter);
 
 // --------------- Routes ---------------
 app.use("/about", aboutRouter);
@@ -51,7 +51,10 @@ app.get("/hire-me", requireUnlocked, async (_req, res) => {
   res.json({
     message: "Congratulations, you found the secret endpoint.",
     note: "If you reached this endpoint, you are exactly the kind of curious engineer I enjoy working with.",
-    contact: "fragozosantos13@gmail.com",
+    contact: {
+      email: "fragozosantos13@gmail.com",
+      phone: "+264817174103"
+    },
   });
 });
 

@@ -5,15 +5,16 @@ const router = Router();
 
 const projects = [
   {
-    name: "remindME",
-    description: "AI-assisted memory logging tool",
-    stack: ["React", "Node.js", "Firebase"],
+    name: "StayConnect Namibia",
+    description: "Acommodation booking platform where you can find rentals ranging from short term to long term, for the Namibian Market",
+    stack: ["React", "Node.js", "Supabase"],
+    link: "https://stayconnectnamibia.com/",
   },
   {
     name: "AI Opportunity Chatbot",
     description:
       "RAG chatbot that helps unemployed youth find opportunities",
-    stack: ["Node.js", "Embeddings", "Qdrant"],
+    stack: ["Node.js", "Embeddings", "Qdrant", "Firebase"],
   },
 ];
 
