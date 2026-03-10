@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { simulateLatency } from "../utils/latency.js";
 
 const router = Router();
 
@@ -16,7 +17,8 @@ const projects = [
   },
 ];
 
-router.get("/", (_req, res) => {
+router.get("/", async (_req, res) => {
+  await simulateLatency();
   res.json(projects);
 });
 
